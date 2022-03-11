@@ -90,7 +90,7 @@ include('index.php');
             <h6 class="left-align" >Unggah dokumen</h6>
             <div class="divider mb-1"></div>
             <div id="container">
-                <form name="upload_form" enctype="multipart/form-data" action="upload-invoice.php" method="POST">
+                <form name="upload_form" enctype="multipart/form-data" action="save-invoice.php" method="POST">
                     <fieldset>
                         <legend>Unggah Invoice </legend>
                         <section>
