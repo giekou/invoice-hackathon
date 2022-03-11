@@ -2,51 +2,84 @@
 include('index.php');
 
 ?>
+<body>
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Upload Invoice(s)</title>
-        <style type="text/css">
-            body {
-                background-color: #fff;
-                margin: 12px;
-                font: 13px/20px normal Helvetica, Arial, sans-serif;
-                color: #4F5155;
-                
-            }
-            #body{
-                margin: 0 15px 0 15px;
-            }
-            #container{
-                margin: 10px;
-                width: 600px;
-                padding: 10px;
-                border: 1px solid #D0D0D0;
-                -webkit-box-shadow: 0 0 8px #D0D0D0;
-            }
-        </style>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="   crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <table class="striped">
+    <div class="container">
+<div class="col s12 m8 offset-m1 xl7 offset-xl1">
+        <table class="responsive-table">
             <thead>
             <tr>
                 <th>Kode PO</th>
                 <th>Tanggal Unggah</th>
                 <th>Batas Akhir Pembayaran</th>
-                <th>Status</th>
+                <th >Latest status</th>
+                <th >detail</th>
             </tr>
             </thead>
-
-            <tbody>
+            <tbody>               
             <tr>
                 <td>AA-0294</td>
-                <td>01/01/1971</td>
-                <td>15/01/1971</td>
-                <td class="new badge red">Open</td>
+                <td>03/03/2022</td>
+                <td>23/03/2022</td>
+                <td><b class="new badge red btn" id="statusButton" >Butuh Revisi</b></td>
+                <td><a class="new badge green modal-trigger btn" href="#modal1">click</a> </td>
             </tr>
+            
+            
+
+
             </tbody>
         </table>
+</div>
+
+        <div id="modal1" class="modal">
+        <div class="modal-content" id="modal1">
+      <h4>AA-0294</h4>
+      <div class="container" style="padding:50px;">
+          <div class="row">
+<div class="col s3">
+      <a class="btn-floating green"><i>1</i></a>
+      <p>Dokumen Diterima</p>
+</div>
+<div class="col s3">
+      <a class="btn-floating green"><i>2</i></a>
+      <p>Dokumen dalam Pengecekan</p>
+</div>
+<div class="col s3">
+      <a class="btn-floating gray"><i>3</i></a>
+      <p>Sudah selesai pengecekan</p>
+</div>
+<div class="col s3">
+      <a class="btn-floating gray"><i>4</i></a>
+      <p>Pembayaran selesai</p>
+</div>
+</div>
+    </div>
+        </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+    </div>
+</div>
+  
+    
+
+  <script>
+  var statusButton=document.getElementById("statusButton");
+  statusButton.disabled="disabled";
+
+      M.AutoInit();
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, options);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+  
+
+    </script>
+    </div>
     </body>
+    </html>
