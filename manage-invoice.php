@@ -22,12 +22,36 @@ include('index.php');
                 <td>03/03/2022</td>
                 <td>23/03/2022</td>
                 <td><b class="new badge red btn" id="statusButton" >Butuh Revisi</b></td>
-                <td><a class="new badge green modal-trigger btn" href="#modal1">click</a> </td>
+                <td><a class="new badge blue modal-trigger btn" href="#modal1">click</a> </td>
             </tr>
-            
-            
-
-
+            <tr>
+                <td>AA-0295</td>
+                <td>03/03/2022</td>
+                <td>23/03/2022</td>
+                <td><b class="new badge amber btn" id="statusButton" >Dokumen Diterima</b></td>
+                <td><a class="new badge blue modal-trigger btn" href="#modal2">click</a> </td>
+            </tr>
+            <tr>
+                <td>AA-0296</td>
+                <td>03/03/2022</td>
+                <td>23/03/2022</td>
+                <td><b class="new badge teal btn" id="statusButton" >Dokumen Dalam pengecekan</b></td>
+                <td><a class="new badge blue modal-trigger btn" href="#modal2">click</a> </td>
+            </tr>
+            <tr>
+                <td>AA-0296</td>
+                <td>03/03/2022</td>
+                <td>23/03/2022</td>
+                <td><b class="new badge green lighten-3 btn" id="statusButton" >Sudah Selesai Pengecekan</b></td>
+                <td><a class="new badge blue modal-trigger btn" href="#modal2">click</a> </td>
+            </tr>
+            <tr>
+                <td>AA-029</td>
+                <td>03/03/2022</td>
+                <td>23/03/2022</td>
+                <td><b class="new badge green btn" id="statusButton" >Pembayaran Selesai</b></td>
+                <td><a class="new badge blue modal-trigger btn" href="#modal2">click</a> </td>
+            </tr>
             </tbody>
         </table>
 </div>
