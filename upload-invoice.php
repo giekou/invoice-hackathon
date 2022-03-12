@@ -65,6 +65,9 @@ include('index.php');
                     $target = $target_dir . basename($original_filename);
                     $tmp  = $_FILES['fileUpload']['tmp_name'][$key];
                     move_uploaded_file($tmp, $target);
+                    echo '<script type="text/javascript">';
+                    echo 'alert("Dokumen Berhasil Diunggah")';
+                    echo '</script>';
                 }
     
             }
@@ -77,7 +80,7 @@ include('index.php');
 
             <div class="card blue white-text" >
                 <div class="card-content">
-                    <p class="caption">Unggah dokumen faktur anda dalam format .pdf</p>
+                    <p class="caption">Unggah dokumen faktur anda dalam format .pdf, .jpg, dan .png</p>
                 </div>
             </div>
             <div>&nbsp;</div>

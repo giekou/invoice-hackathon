@@ -23,7 +23,7 @@
 
 <nav>
     <div class="nav-wrapper blue">
-      <a href="create-invoice.php" class="brand-logo center">Blibli Invoice System</a>
+      <a href="upload-invoice.php" class="brand-logo center">Blibli Invoice System</a>
       <ul class="left hide-on-med-and-down">
         <!-- <li><a href="create-invoice.php">Create Invoice</a></li> -->
         <li><a href="upload-invoice.php">Upload Invoices</a></li>
